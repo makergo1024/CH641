@@ -1,0 +1,50 @@
+{
+    "type":"SoC",
+    "name":"CH641",
+    "title": "WCH SoC CH641",
+    "description":"WCH RISC-V2A USBPD SoC",
+    "version":"1.0.0",
+    "Core": {
+        "num": 1,
+        "type":"RISC-V2A",
+        "Freq": 125,
+        "DMIPS": 100,
+        "CoreMark": 160
+    },
+    "manufacturer": {
+        "vendor":"WCH",
+        "homepage": "http://www.wch.cn/products/CH641.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SoCXin/CH641.git"
+    },
+    "series":["CH641"],
+    "package":["QFN16","QFN20","QFN28"],
+    "peripheral": ["TIM","ADC","USB","UART","SPI","LDO","PWM"],
+    "price":[14,18],
+    "PWR": {
+        "VDD": [2800,5000],
+        "Ivdd": 3.5,
+        "LDO": [5000,3300],
+        "rate": 1024
+    },
+    "EMC": {
+        "EFT": 2000,
+        "ESD": 4000
+    },
+    "upload": {
+        "ISP": true,
+        "IAP": true,
+        "SWD": true,
+        "speed": 115200
+    },
+    "keywords": [
+        "RISC-V",
+        "RISC-V2A",
+        "WCH",
+        "CH641",
+        "USBHS","NFC","BLE","I2C","RTC","SPI",
+        "3.6V","1.8V"
+    ]
+}
